@@ -1,0 +1,47 @@
+.project-item {
+    width: 100%;
+    position: relative;
+    padding: 0 20px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 20;
+    background-color: black;
+    color: white;
+    font-weight: lighter;
+    font-size: 17px;
+    padding: 8px;
+}
+.name{
+    top: 0;
+    left: 10px;
+    color: black;
+    font-weight: lighter;
+    font-size: 23px;
+    padding:10px 8px;
+   
+    font-weight: 400;
+    margin: 10px 0;
+
+    font-size: 24px;
+
+}
+
+.about-item{
+    padding: auto;
+
+
+}
+
+.project-position{
+    opacity: 0.60;
+
+    
+    padding:0 9px;
+    unicode-bidi: isolate;
+
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+}
