@@ -58,13 +58,13 @@ export default function Contact() {
   return ( <section className="content">
     <header>
       <div className="col">
-        <h3 className="contacts">Contact</h3>
-        <p className="something">Lets get in touch and talk about your next project.</p>
+        <h3 className="border-b border-[#f1f1f1] !pt-4 !pb-4 font-normal !mx-5 !my-2.5 text-[25px] leading-[1.5]">Contact</h3>
+        <p className="!p-5">Lets get in touch and talk about your next project.</p>
       </div>
     </header>
     <main>
-      <form onSubmit={handleSubmit} className="contact-form">
-        <div className="input-group">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-[10px]">
+        <div className="mb-[15px] !px-5">
           <input
               type="text"
               name="name"
@@ -75,7 +75,7 @@ export default function Contact() {
           {errors.name && <span className="error">{errors.name}</span>}
         </div>
 
-        <div className="input-group">
+        <div className="mb-[15px] !px-5">
           <input
               type="email"
               name="email"
@@ -86,7 +86,7 @@ export default function Contact() {
           {errors.email && <span className="error">{errors.email}</span>}
         </div>
 
-        <div className="input-group">
+        <div className="mb-[15px] !px-5">
           <input
               type="text"
               name="subject"
@@ -97,7 +97,7 @@ export default function Contact() {
           {errors.subject && <span className="error">{errors.subject}</span>}
         </div>
 
-        <div className="input-group">
+        <div className="mb-[15px] !px-5">
           <textarea
               name="comment"
               placeholder="Your Comment"
@@ -107,8 +107,8 @@ export default function Contact() {
           ></textarea>
           {errors.comment && <span className="error">{errors.comment}</span>}
         </div>
-      <div className="message-send">
-        <button type="submit" className="send-button">SEND MESSAGE</button>
+      <div className="text-white bg-black mt-5 mb-4 ml-[10px] !px-[15px] !py-[10px] text-[15px] leading-[1.5]">
+        <button type="submit" className="bg-gray-500 text-white border-none !mx-10 !my-2 !px-4 !py-4 cursor-pointer hover:bg-gray-500">SEND MESSAGE</button>
         </div>
       </form>
     </main>

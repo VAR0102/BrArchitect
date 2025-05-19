@@ -18,23 +18,23 @@ export default function About() {
   
 
   return (
-    <div className="content">
+    <div>
       <header>
-        <div className="col">
-          <h3 className="project">About</h3>
-          <p className="title-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div>
+          <h3 className="border-b border-[#f1f1f1] !px-5 !py-4 font-normal !my-5 text-[25px] leading-[1.5]">About</h3>
+          <p className="!px-6 !py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
       </header>
-      <div className="project-items-container">
+      <div className="flex flex-start wrap g-4flex justify-start flex-wrap gap-4">
         {projectDatas.map((projectData) => {
           return (
             <div key={projectData.id} style={{ width: "24%" }}>
               <ProjectAbout image={projectData.image} name={projectData.name} position={projectData.position}/>
-            <p className="coment">
+            <p className="!px-5 !py-5 leading-[1.5]">
               Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
               </p>
-              <button className="contact">Contact</button>
+              <button className="text-black bg-[#f1f1f1] w-full !px-[18px] !py-2 text-[15px] leading-[1.5] cursor-pointer ">Contact</button>
             </div>
           );
         })}

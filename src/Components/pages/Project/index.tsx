@@ -9,6 +9,7 @@ import project6 from "../../../../public/prj6.jpg";
 import project7 from "../../../../public/prj7.jpg";
 import project8 from "../../../../public/prj8.jpg";
 
+
 export default function Project() {
   const projectDatas = [
     { id: 1, image: project1, text: "Summer House" },
@@ -34,17 +35,17 @@ export default function Project() {
   ];
 
   return (
-    <div className="containner">
+    <div>
       <header>
         <div className="now">
-          <h3 className="project">Projects</h3>
+          <h3 className="border-b border-[#f1f1f1] !px-5 !py-5 font-normal my-5 text-[25px] leading-[1.5]">Projects</h3>
         </div>
       </header>
 
-      <div className="project-items-container">
+      <div className="flex justify-between items-center flex-wrap gap-4">
         {projectDatas.map((projectData) => {
           return (
-            <div key={projectData.id} style={{ width: "24%" }}>
+            <div key={projectData.id} className="w-[24%]">
               <ProjectItem image={projectData.image} text={projectData.text} />
             </div>
           );
