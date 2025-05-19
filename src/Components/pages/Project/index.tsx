@@ -34,9 +34,9 @@ export default function Project() {
   ];
 
   return (
-    <div className="content">
+    <div className="containner">
       <header>
-        <div className="col">
+        <div className="now">
           <h3 className="project">Projects</h3>
         </div>
       </header>

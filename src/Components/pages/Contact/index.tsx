@@ -5,15 +5,17 @@ import "./style.css"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-                                             name: "", email: "", subject: "", comment: "",
-                                           });
+                                     name: "", email: "", subject: "", comment: "",
+                                       });
 
   const [errors, setErrors] = useState({
                                          name: "", email: "", subject: "", comment: "",
                                        });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({...formData, [e.target.name]: e.target.value});
+    setFormData(
+      {...formData, 
+        [e.target.name]: e.target.value});
     setErrors({...errors, [e.target.name]: ""});
   };
 
@@ -53,11 +55,11 @@ export default function Contact() {
   };
   
 
-  return ( <div className="content">
+  return ( <section className="content">
     <header>
       <div className="col">
         <h3 className="contacts">Contact</h3>
-        <p>Lets get in touch and talk about your next project.</p>
+        <p className="something">Lets get in touch and talk about your next project.</p>
       </div>
     </header>
     <main>
@@ -105,21 +107,10 @@ export default function Contact() {
           ></textarea>
           {errors.comment && <span className="error">{errors.comment}</span>}
         </div>
-<div className="message-send">
+      <div className="message-send">
         <button type="submit" className="send-button">SEND MESSAGE</button>
-
         </div>
       </form>
     </main>
-
-    <div className="con1">
-      </div>
-     <footer className="ending">
-      Powerd
-     </footer>
-      
-
-
-
-  </div>);
+  </section>);
 }

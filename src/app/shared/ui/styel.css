@@ -16,12 +16,11 @@
 }
 .name{
     top: 0;
-    left: 10px;
+  
     color: black;
     font-weight: lighter;
     font-size: 23px;
-    padding:10px 8px;
-   
+    padding:10px 0;
     font-weight: 400;
     margin: 10px 0;
 
@@ -39,7 +38,7 @@
     opacity: 0.60;
 
     
-    padding:0 9px;
+
     unicode-bidi: isolate;
 
     font-family: Verdana, sans-serif;

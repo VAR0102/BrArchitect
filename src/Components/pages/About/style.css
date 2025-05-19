@@ -1,13 +1,18 @@
 .coment {
-  padding: 8px 30px;
+  padding: 8px 20px;
   line-height: 1.5;
 }
 .contact {
   color: #000 ;
   background-color: #f1f1f1;
   width: 100%;
-  padding: 8px 16px;
+  padding: 8px 18px;
   font-size: 15px;
   line-height: 1.5;
   cursor: pointer;
+  margin-left: 20px;
+}
+.title-about{
+  padding: 30px 20px;
+
 }
